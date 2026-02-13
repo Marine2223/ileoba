@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: #0b0b0b;
+    color: white;
+}
+
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    width: 100%;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    color: gold;
+    font-size: 28px;
+    letter-spacing: 3px;
+}
+
+nav a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: gold;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
+                url("https://images.unsplash.com/photo-1521335629791-ce4aec67dd47") center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 70px;
+    color: gold;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+.hero button {
+    margin-top: 30px;
+    padding: 15px 40px;
+    border: none;
+    background: gold;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    background: white;
+}
+
+/* ABOUT */
+.about {
+    padding: 120px 20px;
+    text-align: center;
+    background: #111;
+}
+
+.about h2 {
+    color: gold;
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+/* SERVICES */
+.services {
+    padding: 120px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    color: gold;
+    margin-bottom: 50px;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.service-card {
+    width: 260px;
+    padding: 40px;
+    background: #111;
+    border: 1px solid #222;
+    transition: 0.4s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    border-color: gold;
+}
+
+.service-card h3 {
+    color: gold;
+    margin-bottom: 15px;
+}
+
+/* CTA */
+.cta {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(45deg, black, #222);
+}
+
+.cta h2 {
+    margin-bottom: 30px;
+}
+
+.cta button {
+    padding: 15px 40px;
+    border: none;
+    background: gold;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    background: black;
+}
